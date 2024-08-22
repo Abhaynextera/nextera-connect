@@ -1,0 +1,525 @@
+h1 {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.text {
+    background: -webkit-linear-gradient(#0071BC, #7262B0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+}
+
+.nav-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    right: 50%;
+    position: absolute;
+    background: #0071BC;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after {
+    width: 70%;
+    left: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --border-color: #fff5;
+    --w-image: 500px;
+    --calculate: calc(3 / 2);
+}
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel .list {
+    height: 100%;
+    position: relative;
+}
+
+.carousel .list::before {
+    position: absolute;
+    width: var(--w-image);
+    height: 100%;
+    content: '';
+    top: 0;
+    left: calc(100% - calc(var(--w-image) * var(--calculate)));
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.carousel .list::after {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    content: '';
+    /* background-color: red; */
+    width: 400px;
+    height: 300px;
+    z-index: 10;
+    pointer-events: none;
+    border-radius: 20px 50px 110px 230px;
+    filter: blur(150px);
+    opacity: .6;
+}
+
+.carousel .list .item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .list .item .image {
+    width: var(--w-image);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(100% - calc(var(--w-image) * var(--calculate)));
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-weight: 500;
+}
+
+.carousel .list .item .image img {
+    width: 70%;
+    filter: drop-shadow(0 150px 50px #9e0c0c55);
+}
+
+.carousel .list .item .image figcaption {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: right;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.carousel .list .item .main-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: calc(100% - calc(var(--w-image) * var(--calculate)));
+}
+
+.carousel .list .item .main-content .content {
+    padding: 150px 20px 20px 50px;
+}
+
+.carousel .list .item .main-content .content h2 {
+    font-size: 4em;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.carousel .list .item .main-content .content .price {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.carousel .list .item .main-content .content .addToCard {
+    background-color: #4f8b69;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: Poppins;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+}
+
+.arrows {
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - calc(var(--w-image) * var(--calculate)));
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    grid-template-rows: 50px;
+    justify-content: end;
+    gap: 10px;
+}
+
+.arrows button {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: #fff;
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    line-height: 0;
+    box-shadow: 0 10px 40px #5555;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.arrows button:hover {
+    background-color: #eee5;
+}
+
+.carousel .list .item {
+    display: none;
+}
+
+.carousel .list .item.active,
+.carousel .list .item.other_1,
+.carousel .list .item.other_2 {
+    display: block;
+}
+
+.carousel .list .item.active {
+    z-index: 2;
+}
+
+.carousel .list .item.other_1,
+.carousel .list .item.other_2 {
+    pointer-events: none;
+}
+
+.carousel .list .item.active .main-content {
+    animation: showContent 1s ease-in-out 1 forwards;
+}
+
+@keyframes showContent {
+    from {
+        clip-path: circle(0% at 70% 50%);
+    }
+
+    to {
+        clip-path: circle(100% at 70% 50%);
+    }
+}
+
+.next .item.other_1 {
+    z-index: 1;
+}
+
+.next .item .image img,
+.next .item .image figcaption {
+    animation: effectNext .5s ease-in-out 1 forwards;
+}
+
+@keyframes effectNext {
+    from {
+        transform: translateX(calc(var(--transform-from)));
+    }
+
+    to {
+        transform: translateX(calc(var(--transform-from) - var(--w-image)));
+    }
+}
+
+.next .item.active .image {
+    --transform-from: var(--w-image);
+}
+
+.next .item.other_1 .image {
+    z-index: 3;
+    --transform-from: 0px;
+    overflow: hidden;
+}
+
+.next .item.other_2 .image {
+    z-index: 3;
+    --transform-from: calc(var(--w-image) * 2);
+}
+
+.arrows {
+    z-index: 10;
+}
+
+/* prev */
+.prev .list .item .image img,
+.prev .list .item .image figcaption {
+    animation: effectPrev 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes effectPrev {
+    from {
+        transform: translateX(calc(var(--transform-from)));
+    }
+
+    to {
+        transform: translateX(calc(var(--transform-from) + var(--w-image)));
+    }
+}
+
+.prev .list .item.active .image {
+    --transform-from: calc(var(--w-image) * -1);
+    overflow: hidden;
+}
+
+.prev .list .item.other_1 .image {
+    --transform-from: 0px;
+    z-index: 3;
+}
+
+.prev .list .item.other_2 .image {
+    z-index: 3;
+    --transform-from: var(--w-image);
+}
+
+.prev .list .item.other_2 .main-content {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    :root {
+        --calculate: 1;
+        --w-image: 400px;
+    }
+
+    .carousel .list .item .main-content .content h2 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .carousel .list .item .image {
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+
+    .carousel .list .item .image figcaption {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel .list .item .main-content .content {
+        display: none;
+    }
+
+    .arrows {
+        left: 50%;
+        justify-content: center;
+    }
+}
+
+.srvc-card-details {
+    background-image: linear-gradient(to right, #0071BC, #7262B0);
+    /* background: #282828; */
+    border-radius: 20px;
+    display: flex;
+    margin-top: 40px;
+    margin-right: 20px;
+    min-height: 465px;
+}
+
+.srvc-card-content {
+    padding: 40px 51px 40px 38px;
+}
+
+.srvc-card-content h2 {
+    font-weight: 600;
+    line-height: 50px;
+    color: #f9f9f9;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.srvc-card-content .description {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 28px;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.srvc-card-icon-list {
+    background: #2c2c2c;
+    box-shadow: 4px 0 12px rgba(135, 132, 132, .3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 140px;
+}
+
+.srvc-card-icon-list .srvc-list-icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.srvc-card-content .btn.btn-primary {
+    background-color: transparent !important;
+    border: 1px solid #fff;
+    filter: drop-shadow(0 4px 13px rgba(234, 234, 234, .25));
+    border-radius: 22.5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding: 13px 65px;
+    overflow: hidden;
+}
+
+.cm-home-idea-left-wrapper {
+    padding: 50px;
+}
+
+.cm-home-idea-item-1 {
+    background-image: url('https://www.tranktechnologies.com/assets/new-assets/homepage/Group-12608.png');
+    width: 533px;
+    min-height: 170px;
+    background-repeat: no-repeat;
+}
+
+.cm-home-idea-item-2 {
+    background-image: url('https://www.tranktechnologies.com/assets/new-assets/homepage/home-idea-2.png');
+    width: 533px;
+    min-height: 170px;
+    background-repeat: no-repeat;
+    margin-left: 33px;
+}
+
+.cm-home-idea-item-3 {
+    background-image: url('https://www.tranktechnologies.com/assets/new-assets/homepage/Group-12608 (2).png');
+    width: 533px;
+    min-height: 170px;
+    background-repeat: no-repeat;
+}
+
+.cm-content {
+    padding: 18px 15px 0 100px;
+}
+
+.cm-content h4,
+p {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.cm-home-idea-item:nth-child(2n) .cm-content {
+    padding-left: 25px;
+    padding-right: 100px;
+}
+
+.cm-home-idea-right-wrapper {
+    background-image: url('https://www.tranktechnologies.com/assets/new-assets/web-dev.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cm-home-idea-right-wrapper .cm-content {
+    position: absolute;
+    bottom: 0;
+    left: -90px;
+}
+
+.cm-sec-bg {
+    background-image: linear-gradient(to right, #0071BC, #7262B0);
+    width: 400px;
+    padding: 20px;
+}
+
+.cm-performance-wrapper {
+    background-image: linear-gradient(to right, #0071BC, #7262B0);
+}
+
+.cm-carousel {
+    background-image: linear-gradient(to right, #0071BC, #7262B0);
+}
+
+.cm-footer-logo {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.cm-contact-icon {
+    width: 20%;
+    border-right: 1px solid #000;
+    padding: 30px 0;
+}
+
+.cm-contact-icon i {
+    font-size: 3em;
+}
+
+.footer-bg {
+    background-image: url('https://www.tranktechnologies.com/assets/new-assets/services/web-dev/bg-2.webp');
+    padding: 30px 0;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.outer-wrapper {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 10px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.get-in-touch:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #0071BC, #7262B0);
+}
+
+.call-us:hover {
+    color: #fff;
+    background-color: #0071BC;
+}
+
+.mail-us:hover {
+    color: #fff;
+    background-color: #DB4437;
+}
+
+.teams:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #4E5FBF, #8091F2);
+}
+
+.whatsapp:hover {
+    color: #fff;
+    background-color: #25D366;
+}
