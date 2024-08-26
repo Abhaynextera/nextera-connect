@@ -9,7 +9,7 @@ function Review() {
         { id: 2, src: 'https://searchngoorg.wordpress.com/wp-content/uploads/2018/05/dummy-logo.jpg?w=640', alt: 'Review Badge 2' },
         { id: 3, src: 'https://img.freepik.com/free-vector/gradient-rounded-abstract-business-logotype_23-2148199344.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724198400&semt=ais_hybrid', alt: 'Review Badge 3' },
         { id: 4, src: 'https://img.freepik.com/premium-vector/abstract-logo-company-made-with-color_341269-925.jpg', alt: 'Review Badge 4' },
-        { id: 5, src: 'https://img.freepik.com/free-psd/gradient-abstract-logo_23-2150689665.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724198400&semt=ais_hybrid', alt: 'Review Badge 5' }
+        { id: 5, src: 'https://img.freepik.com/free-vector/gradient-logo_23-2148149233.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724198400&semt=ais_hybrid', alt: 'Review Badge 5' }
     ]);
 
     const settings = {

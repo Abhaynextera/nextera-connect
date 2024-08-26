@@ -16,7 +16,7 @@ function Performance() {
                     </div>
                 </div>
             </div>
-            <section className="cm-carousel pt-3">
+            <div className="cm-carousel pt-3">
                 <Carousel>
                     <Carousel.Item>
                         <img className="mx-auto d-block w-75" src="https://techindustan.com/wp-content/uploads/2024/02/EP-1-1.webp" alt="img" />
@@ -37,7 +37,7 @@ function Performance() {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-            </section>
+            </div>
         </>
     )
 }
