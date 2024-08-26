@@ -1,4 +1,6 @@
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
@@ -38,7 +40,7 @@ h1 {
 }
 
 .nav-link:hover:after {
-    width: 70%;
+    width: 50%;
     left: 0;
 }
 
@@ -584,7 +586,7 @@ p {
     position: relative;
 }
 
-.ceo-img img{
+.ceo-img img {
     width: 375px;
     border-radius: 25px;
 }
@@ -677,20 +679,21 @@ p {
     transition: all 2s ease-in-out;
 }
 
-.ceo-img:hover{
-    .dark-img{
+.ceo-img:hover {
+    .dark-img {
         display: block;
     }
-    .color-img{
+
+    .color-img {
         display: none;
     }
 }
 
-.cm-mission p{
+.cm-mission p {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
-.contact{
+.contact {
     background-image: linear-gradient(to right, #7262B0, #0071BC);
     border: 0;
     border-radius: 22.5px;
@@ -703,14 +706,50 @@ p {
     margin-top: 20px;
 }
 
-.career-wrapper{
+.bg-wrapper {
     background-image: linear-gradient(to right, #0071BC, #7262B0);
     padding: 10% 0 5%;
 }
 
+.form-control {
+    background-color: rgb(247, 247, 247);
+}
 
+.social-icon {
+    width: 10%;
+}
 
+.social-icon i {
+    font-size: 2em;
+}
 
+.social-icon-outer-wrapper {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    align-items: center;
+    transition: all 300ms ease;
+}
 
+.twitter {
+    color: #1DA1F2;
+}
 
+.facebook {
+    color: #1877F2;
+}
 
+.youtube {
+    color: #FF0000;
+}
+
+.instagram {
+    background: -webkit-linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

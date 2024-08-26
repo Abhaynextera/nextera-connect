@@ -17,7 +17,7 @@ function Career() {
 
       <Navbar />
 
-      <div className='career-wrapper'>
+      <div className='bg-wrapper'>
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-0 col-sm-0 col-md-3 col-lg-3 col-xl-3 col-xxl-3'>
