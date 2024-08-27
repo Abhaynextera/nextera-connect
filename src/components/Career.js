@@ -8,7 +8,6 @@ import 'bootstrap/dist/js/bootstrap.js';
 import '../assets/css/style.css';
 
 import Navbar from './Navbar'
-import Review from './review/Review';
 import Footer from './Footer';
 
 function Career() {
@@ -48,8 +47,6 @@ function Career() {
           <p>Ready to embark on a rewarding career journey with NextEra Connect? Submit your application by sending your resume and cover letter to <span className='text'>[hr@nexteraconnect.co.in]</span></p>
         </div>
       </div>
-
-      <Review />
 
       <Footer />
     </>

@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 import '../assets/css/style.css';
 
 import Navbar from './Navbar'
+import Footer from './Footer';
 
 function Contact() {
   return (
@@ -21,7 +22,7 @@ function Contact() {
             <div className='col-0 col-sm-0 col-md-6 col-lg-6 col-xl-6 col-xxl-6'>
               <h1 className='text-center text-uppercase text-white'>Contact Us</h1>
               <p className='text-white'>We're eager to connect with you! Whether you have questions, need more information
-                <br></br> about our services, or want to explore potential collaborations, we're here for you.</p>
+                about our services, or want to explore potential collaborations, we're here for you.</p>
               <div className='text-center'>
                 <button className='contact border' style={{ background: 'transparent' }}>Get In Touch Now</button>
               </div>
@@ -108,7 +109,7 @@ function Contact() {
           <div className='col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
             <div className='bg-overlay'>
               <div className='card shadow rounded border-0 p-3 mb-4'>
-                <h3 className='h5'>NEXTERA CONNECT PVT LTD.</h3>
+                <h3 className='h5 text'>NEXTERA CONNECT PVT LTD.</h3>
                 <p>CN - 622, 4th Floor
                   Novel MSR Park,
                   Subbaiah Reddy Colony,
@@ -120,7 +121,7 @@ function Contact() {
           <div className='col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
             <div className='bg-overlay'>
               <div className='card shadow rounded border-0 p-3 mb-4'>
-                <h3 className='h5'>PHONE NUMBER</h3>
+                <h3 className='h5 text'>PHONE NUMBER</h3>
                 <p>Mobile: +91 6366555070</p>
                 <p>Mobile: +91 6366555071</p>
               </div>
@@ -129,13 +130,15 @@ function Contact() {
           <div className='col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
             <div className='bg-overlay'>
               <div className='card shadow rounded border-0 p-3 mb-4'>
-                <h3 className='h5'>E MAIL</h3>
+                <h3 className='h5 text'>E MAIL</h3>
                 <p>info@nexteraconnect.co.in</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   )
 }

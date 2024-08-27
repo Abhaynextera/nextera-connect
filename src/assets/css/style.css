@@ -753,3 +753,11 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.bg-overlay .card {
+    height: 150px;
+}
+
+.cm-staff-sol .card{
+    background-color: ghostwhite;
+}

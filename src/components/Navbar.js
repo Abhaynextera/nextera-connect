@@ -29,12 +29,9 @@ function Navbar() {
                             SERVICES
                         </Link>
                         <ul className="dropdown-menu">
-                            <li><Link to="/services/service1" className="dropdown-item">PRODUCT DEVELOPMENT</Link></li>
-                            <li><Link to="/services/service2" className="dropdown-item">PERMANENT STAFFING SERVICES</Link></li>
-                            <li><Link to="/services/service3" className="dropdown-item">CONTRACT STAFFING SERVICES</Link></li>
-                            <li><Link to="/services/service3" className="dropdown-item">TEMPORARY STAFFING SERVICES</Link></li>
-                            <li><Link to="/services/service3" className="dropdown-item">CONTRACT STAFFING SERVICES</Link></li>
-                            <li><Link to="/services/service3" className="dropdown-item">MIDDLEWARE ENTERPRISE INTEGRATION</Link></li>
+                            <li><Link to="/services/product-development" className="dropdown-item">PRODUCT DEVELOPMENT</Link></li>
+                            <li><Link to="/services/general-staffing-services" className="dropdown-item">GENERAL STAFFING SERVICES</Link></li>
+                            <li><Link to="/services/middleware-enterprise-integration" className="dropdown-item">MIDDLEWARE ENTERPRISE INTEGRATION</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item">

@@ -9,7 +9,6 @@ import '../assets/css/style.css';
 import value from '../assets/Images/values.png'
 
 import Navbar from './Navbar'
-import Review from './review/Review';
 import Footer from './Footer';
 
 function About() {
@@ -25,7 +24,7 @@ function About() {
                 </div>
             </div>
 
-            <div className='' style={{ marginTop: '15%' }}>
+            <div className='container' style={{ marginTop: '15%' }}>
                 <h1 className='text-center text-uppercase'>Transforming Concepts into <span className='text'> Digital Excellence </span> with Precision, Skill, and Innovative Tech</h1>
             </div>
 
@@ -135,8 +134,6 @@ function About() {
                     </div>
                 </div>
             </div>
-
-            <Review />
 
             <Footer />
         </>
