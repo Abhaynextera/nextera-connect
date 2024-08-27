@@ -404,6 +404,7 @@ h3 {
     width: 533px;
     min-height: 170px;
     background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
 
 .cm-home-idea-item-2 {
@@ -412,6 +413,7 @@ h3 {
     min-height: 170px;
     background-repeat: no-repeat;
     margin-left: 33px;
+    margin-bottom: 20px;
 }
 
 .cm-home-idea-item-3 {
@@ -419,6 +421,7 @@ h3 {
     width: 533px;
     min-height: 170px;
     background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
 
 .cm-content {
