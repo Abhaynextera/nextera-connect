@@ -32,6 +32,7 @@ function Navbar() {
                             <li><Link to="/services/product-development" className="dropdown-item">PRODUCT DEVELOPMENT</Link></li>
                             <li><Link to="/services/general-staffing-services" className="dropdown-item">GENERAL STAFFING SERVICES</Link></li>
                             <li><Link to="/services/middleware-enterprise-integration" className="dropdown-item">MIDDLEWARE ENTERPRISE INTEGRATION</Link></li>
+                            <li><Link to="/services/training" className="dropdown-item">TRAINING</Link></li>
                         </ul>
                     </li>
                     <li className="nav-item">

@@ -47,6 +47,45 @@ function Footer() {
                     </div>
                 </div>
             </div>
+
+            <div className='cm-fwrapper'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4'>
+                            <h2 className='h5'>| ABOUT COMPANY</h2>
+                            <p className=''>We specialize in comprehensive human resources management and recruitment services, offering tailored solutions to meet the diverse needs of businesses across various industries.</p>
+                        </div>
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2'>
+                            <h2 className='h5'>| QUICK LINKS</h2>
+                            <p>Home</p>
+                            <p>About Us</p>
+                            <p>Services</p>
+                            <p>Career</p>
+                            <p>Contact Us</p>
+                        </div>
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3'>
+                            <h2 className='h5'>| OUR SERVICES</h2>
+                            <p>Product Development</p>
+                            <p>General Staffing Services</p>
+                            <p>Middleware Enterprise Integration</p>
+                        </div>
+                        <div className='col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3'>
+                            <h2 className='h5'>| CONTACT DETAIL</h2>
+                            <p className=''><i class="bi bi-house-door-fill"></i>&nbsp; NextEra Connect Pvt Ltd.,</p>
+                            <p className='px-4'>CN - 622, 4th floor <br></br> Novel MSR Building,</p>
+                            <p className=''><i class="bi bi-geo-alt-fill"></i>&nbsp; Subbaiah Reddy Colony, <br></br>
+                            &nbsp; &nbsp; &nbsp; Marathahalli, Bengaluru, <br></br>
+                            &nbsp; &nbsp; &nbsp; Karnataka 560037.</p>
+                            <p className=''><i class="bi bi-telephone-fill"></i>&nbsp; <tel>+91 6366555070</tel></p>
+                            <p className=''><i class="bi bi-envelope-at-fill"></i>&nbsp; info@nexteraconnect.co.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='cm-fwrapper-cpyrt'>
+                <p className='text-center'>COPYRIGHT © 2023 <b>NEXTERACONNECT</b>. ALL RIGHTS RESERVED</p>
+            </div>
         </>
     )
 }

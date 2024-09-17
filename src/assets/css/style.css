@@ -11,7 +11,7 @@ h3 {
 }
 
 .nav-item {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -504,27 +504,27 @@ p {
     transition: all 300ms ease;
 }
 
-.get-in-touch:hover {
+.get-in-touch {
     color: #fff;
     background-image: linear-gradient(to right, #0071BC, #7262B0);
 }
 
-.call-us:hover {
+.call-us {
     color: #fff;
     background-color: #0071BC;
 }
 
-.mail-us:hover {
+.mail-us {
     color: #fff;
     background-color: #DB4437;
 }
 
-.teams:hover {
+.teams {
     color: #fff;
-    background-image: linear-gradient(to right, #4E5FBF, #8091F2);
+    background-color: #4E5FBF;
 }
 
-.whatsapp:hover {
+.whatsapp {
     color: #fff;
     background-color: #25D366;
 }
@@ -761,6 +761,32 @@ p {
     height: 150px;
 }
 
-.cm-staff-sol .card{
+.cm-staff-sol .card {
     background-color: ghostwhite;
+}
+
+.cm-fwrapper {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://nexteraconnect.co.in/wp-content/uploads/2023/12/bosa-business04-img15.jpg');
+    padding: 5% 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cm-fwrapper h2{
+    color: #fff;
+}
+
+.cm-fwrapper p{
+    color: #fff;
+}
+
+.cm-fwrapper-cpyrt{
+    background-image: linear-gradient(to right, #0071BC, #7262B0);
+    color: #fff;
+    padding: 8px;
+}
+
+.cm-fwrapper-cpyrt p{
+    margin-bottom: 0;
 }

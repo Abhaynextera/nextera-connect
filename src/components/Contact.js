@@ -85,7 +85,7 @@ function Contact() {
 
                 <div className='mb-3'>
                   <label for="phone" className="form-label">Phone Number</label>
-                  <input type="phone" className="form-control rounded-0" id="phone" placeholder='E.g. +13004005000' required />
+                  <input type="phone" className="form-control rounded-0" id="phone" placeholder='E.g. +91 3004005000' required />
                   <div class="invalid-feedback">
                     Enter Valid Phone Number
                   </div>
