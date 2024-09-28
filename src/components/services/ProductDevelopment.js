@@ -32,7 +32,7 @@ function ProductDevelopment() {
             </div>
 
             <div className='container'>
-                <img className='mx-auto d-block' src="https://domainsarai.com/law/assets/Images/coming%20soon.jpg"></img>
+                <img className='mx-auto d-block w-50' src="https://media.istockphoto.com/id/1302168946/vector/coming-soon-red-ribbon-label-banner-open-available-now-sign-or-coming-soon-tag-vector.jpg?s=612x612&w=0&k=20&c=uzI1Ztsm3NcyQCscb1kQ3goarshfkR_n2ZDhAwgYPWQ="></img>
             </div>
 
             <Footer />

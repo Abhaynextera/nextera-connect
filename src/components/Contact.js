@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Bootstrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +11,39 @@ import Navbar from './Navbar'
 import Footer from './Footer';
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:3000/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form
+      } else {
+        alert('Failed to send message.');
+      }
+    } catch (error) {
+      alert('Error sending message: ' + error.message);
+    }
+  };
   return (
     <>
       <Navbar />
@@ -34,7 +67,7 @@ function Contact() {
 
       <div className='container my-5'>
         <div className='row'>
-          <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-lg-6 col-xl-6 col-xxl-6'>
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
             <h1 className=''>GET IN TOUCH AND <span className='text'>REACH US!!</span></h1>
             <p>We're eager to connect with you! Whether you have questions, need more information about our services, or want to explore potential collaborations, we're here for you.</p>
 
@@ -64,41 +97,76 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-lg-6 col-xl-6 col-xxl-6'>
+          <div className='col-12 col-sm-12 col-md-12 col-lg-6 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
             <div className='box shadow rounded border-0 p-4'>
-              <form className='needs-validation' novalidate>
+              <form onSubmit={handleSubmit} className='needs-validation' novalidate>
                 <div className='mb-3'>
-                  <label for="name" className="form-label">Name</label>
-                  <input type="text" className="form-control rounded-0" id="name" placeholder='E.g. John' required />
-                  <div class="invalid-feedback">
+                  <label htmlFor="name" className="form-label">Name</label>
+                  <input
+                    type="text"
+                    className="form-control rounded-0"
+                    id="name"
+                    name="name" // Add name attribute
+                    placeholder='E.g. John'
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                  <div className="invalid-feedback">
                     Enter Your Name
                   </div>
                 </div>
 
                 <div className='mb-3'>
-                  <label for="email" className="form-label">E-mail Address</label>
-                  <input type="email" className="form-control rounded-0" id="email" placeholder='E.g. John@doe.com' required />
-                  <div class="invalid-feedback">
+                  <label htmlFor="email" className="form-label">E-mail Address</label>
+                  <input
+                    type="email"
+                    className="form-control rounded-0"
+                    id="email"
+                    name="email" // Add name attribute
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder='E.g. John@doe.com'
+                    required
+                  />
+                  <div className="invalid-feedback">
                     Enter Valid Email Address
                   </div>
                 </div>
 
                 <div className='mb-3'>
-                  <label for="phone" className="form-label">Phone Number</label>
-                  <input type="phone" className="form-control rounded-0" id="phone" placeholder='E.g. +91 3004005000' required />
-                  <div class="invalid-feedback">
+                  <label htmlFor="phone" className="form-label">Phone Number</label>
+                  <input
+                    type="text"
+                    className="form-control rounded-0"
+                    id="phone"
+                    name="phone" // Add name attribute
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder='E.g. +91 3004005000'
+                    required
+                  />
+                  <div className="invalid-feedback">
                     Enter Valid Phone Number
                   </div>
                 </div>
 
-                <div class="">
-                  <label for="message" className="form-label">Message</label>
-                  <textarea className="form-control rounded-0" id="message" rows="4" placeholder='Enter Your Message...'></textarea>
+                <div className="">
+                  <label htmlFor="message" className="form-label">Message</label>
+                  <textarea
+                    className="form-control rounded-0"
+                    id="message"
+                    name="message" // Add name attribute
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows="4"
+                    placeholder='Enter Your Message...'
+                  ></textarea>
                 </div>
 
-                <button className='contact border'>SUBMIT</button>
-
+                <button type='submit' className='contact border'>SUBMIT</button>
               </form>
+
             </div>
           </div>
         </div>

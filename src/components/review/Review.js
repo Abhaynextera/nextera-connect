@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Review() {
     const [reviewImages, setReviewImages] = useState([
-        { id: 1, src: 'https://img.freepik.com/free-vector/gradient-logo_23-2148149233.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724198400&semt=ais_hybrid', alt: 'Review Badge 1' },
-        { id: 2, src: 'https://searchngoorg.wordpress.com/wp-content/uploads/2018/05/dummy-logo.jpg?w=640', alt: 'Review Badge 2' },
-        { id: 3, src: 'https://img.freepik.com/free-vector/gradient-rounded-abstract-business-logotype_23-2148199344.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724198400&semt=ais_hybrid', alt: 'Review Badge 3' },
-        { id: 4, src: 'https://img.freepik.com/premium-vector/abstract-logo-company-made-with-color_341269-925.jpg', alt: 'Review Badge 4' },
-        { id: 5, src: 'https://img.freepik.com/free-vector/gradient-logo_23-2148149233.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724198400&semt=ais_hybrid', alt: 'Review Badge 5' }
+        { id: 1, src: 'https://logowik.com/content/uploads/images/glassdoor-new-20235206.logowik.com.webp', alt: 'Review Badge 1' },
+        { id: 2, src: 'https://static.theprint.in/wp-content/uploads/2023/11/ANI-20231124081154.jpg?compress=true&quality=80&w=800&dpr=2', alt: 'Review Badge 2' },
+        { id: 3, src: 'https://www.tranktechnologies.com/assets/new-assets/footer-badges/top-software-developers.png', alt: 'Review Badge 3' },
+        { id: 4, src: 'https://logowik.com/content/uploads/images/crunchbase8681.logowik.com.webp', alt: 'Review Badge 4' },
+        { id: 5, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXajz6np_4fLf0XrC90ln1fyRkTcgLBnsTg&s', alt: 'Review Badge 5' }
     ]);
-
+    
     const settings = {
         dots: true,
         infinite: true,

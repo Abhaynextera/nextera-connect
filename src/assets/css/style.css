@@ -514,6 +514,28 @@ p {
     background-color: #0071BC;
 }
 
+.cm-contact-icon .outer-wrapper:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+}
+
 .mail-us {
     color: #fff;
     background-color: #DB4437;
@@ -777,7 +799,7 @@ p {
     color: #fff;
 }
 
-.cm-fwrapper p{
+.cm-fwrapper {
     color: #fff;
 }
 
@@ -789,4 +811,57 @@ p {
 
 .cm-fwrapper-cpyrt p{
     margin-bottom: 0;
+}
+
+@media (max-width: 375px) {
+    .srvc-card-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .cm-contact-icon {
+        width: 100%;
+        border: 0px;
+    }
+
+    .bg-wrapper h1{
+        margin-top: 20%;
+    }
+
+    .contact-wrapper h1 {
+        margin-top: 20%;
+    }
+
+    .ceo-img img {
+        width: 100%;
+    }
+
+    .ceo-line-ani-1::before {
+       display: none;
+    }
+
+    .ceo-line-ani-2::before {
+        display: none;
+    }
+
+    .cm-carousel .carousel{
+        height: auto;
+    }
+
+    .ceo-about {
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .contact-img-wrapper {
+        background: transparent;
+        transform: rotate(0deg);
+    }
+
+    .contact-img-wrapper img {
+        transform: rotate(0deg);
+    }
 }

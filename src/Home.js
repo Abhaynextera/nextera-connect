@@ -74,7 +74,7 @@ function Home() {
                 <div className='cm-service'>
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-12 mb-4">
-                            <div data-aos='fade-up' className="srvc-card-main-wrap">
+                            <div className="srvc-card-main-wrap">
                                 <div className="srvc-card-details">
                                     <div className="srvc-card-content">
                                         <h2 className="">Salesforce Development</h2>
@@ -116,7 +116,7 @@ function Home() {
                         </div>
 
                         <div className="col-lg-6 col-md-12 col-12 mb-4">
-                            <div data-aos='fade-up' className="srvc-card-main-wrap">
+                            <div className="srvc-card-main-wrap">
                                 <div className="srvc-card-details">
                                     <div className="srvc-card-content">
                                         <h2 className=''>Mobile App Development</h2>
@@ -158,7 +158,7 @@ function Home() {
                         </div>
 
                         <div className="col-lg-6 col-md-12 col-12 mb-4">
-                            <div data-aos='fade-up' className="srvc-card-main-wrap">
+                            <div className="srvc-card-main-wrap">
                                 <div className="srvc-card-details">
                                     <div className="srvc-card-content">
                                         <h2 className="">Website Development</h2>
@@ -200,7 +200,7 @@ function Home() {
                         </div>
 
                         <div className="col-lg-6 col-md-12 col-12 mb-4">
-                            <div data-aos='fade-up' className="srvc-card-main-wrap">
+                            <div className="srvc-card-main-wrap">
                                 <div className="srvc-card-details">
                                     <div className="srvc-card-content">
                                         <h2 className="">Digital Marketing Services</h2>
@@ -250,7 +250,7 @@ function Home() {
             <div className='container'>
                 <h1 className='text-center text-uppercase my-5'>Unique <span className='text'>Selling</span> Points (USP<span className='text-lowercase'>s</span>)</h1>
                 <div className='row'>
-                    <div data-aos='fade-right' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
+                    <div data-aos='fade-up' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
                         <div className='row'>
                             <div className='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2'>
                                 <img src='https://nexteraconnect.co.in/wp-content/uploads/2023/12/1.png' className='' width='60px' alt='Recruitment Excellence'></img>
@@ -261,7 +261,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div data-aos='fade-left' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
+                    <div data-aos='fade-up' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
                         <div className='row'>
                             <div className='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2'>
                                 <img src='https://nexteraconnect.co.in/wp-content/uploads/2023/12/2.png' className='' width='60px' alt='Technology Advantage'></img>
@@ -272,7 +272,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div data-aos='fade-right' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
+                    <div data-aos='fade-up' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
                         <div className='row'>
                             <div className='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2'>
                                 <img src='https://nexteraconnect.co.in/wp-content/uploads/2023/12/3.png' className='' width='60px' alt='Talent Network'></img>
@@ -283,7 +283,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div data-aos='fade-left' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
+                    <div data-aos='fade-up' className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mb-4'>
                         <div className='row'>
                             <div className='col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2'>
                                 <img src='https://nexteraconnect.co.in/wp-content/uploads/2023/12/4.png' className='' width='60px' alt='Client-Centric'></img>
